@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {filterProducts} from "../actions";
+import {filterProducts} from "../store/actions/actions";
 
 class FilterProducts extends Component {
     createFilterRadio(value, text) {
@@ -36,7 +36,7 @@ class FilterProducts extends Component {
 }
 
 const mapStateToProps = function(state) {
-    return {filter: state.filter}
+    // return {filter: state.filter}
 }
 
 // Review the `filterProducts` function

@@ -24,17 +24,17 @@ class ProductList extends Component {
 // - `overTwenty`
 // - `all` or the default
 const mapStateToProps = function(state) {
-    let products;
-    // complete the `if else` statement including conditions and `products` value
-    if () {
-
-    } else if () {
-
-    } else {
-
-    }
-
-    return {products: products}
+    // let products;
+    // // complete the `if else` statement including conditions and `products` value
+    // if () {
+    //
+    // } else if () {
+    //
+    // } else {
+    //
+    // }
+    //
+    // return {products: products}
 }
 
 export default connect(mapStateToProps)(ProductList);
