@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import 'shoelace-css/dist/shoelace.css';
-import './App.css';
+import '../styles/App.css';
 
-import FilterProducts from "./containers/FilterProducts";
-import ProductList from "./containers/ProductList";
+import FilterProducts from "./FilterProducts";
+import ProductList from "./ProductList";
 
 class App extends Component {
     render() {

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-import './index.css';
+import './styles/index.css';
 import registerServiceWorker from './registerServiceWorker';
-import productApp from './reducer'
-import App from './App'
+import productApp from './store/reducers/reducer'
+import App from './containers/App'
 
 const store = createStore(
   productApp,
