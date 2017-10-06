@@ -7,14 +7,23 @@ class ProductList extends Component {
 
     render() {
         const {products} = this.props;
+
         // Create a dynamically populated list of `<Product />` components
         // Each `<Product />` component should have a single object from the `products` state property (array)
         // applied to the component as a `product` property
-        return (
-            <ul className="ProductList">
 
+
+        return (
+            <ul className="ProductList" key={products.listing_id}>
+              {products.map((productInfo) => {
+                <Product
+
+                {...productInfo}
+                />
+              })}
             </ul>
-        );
+          )
+
     }
 }
 
@@ -25,16 +34,9 @@ class ProductList extends Component {
 // - `all` or the default
 const mapStateToProps = function(state) {
     // let products;
-    // // complete the `if else` statement including conditions and `products` value
-    // if () {
-    //
-    // } else if () {
-    //
-    // } else {
-    //
-    // }
-    //
-    // return {products: products}
+    console.log(state);
+    // complete the `if else` statement including conditions and `products` value
+return {products: state.products}
 }
 
 export default connect(mapStateToProps)(ProductList);
