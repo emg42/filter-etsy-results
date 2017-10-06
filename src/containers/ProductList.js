@@ -14,13 +14,15 @@ class ProductList extends Component {
 
 
         return (
-            <ul className="ProductList" key={products.listing_id}>
+            <ul className="ProductList" >
               {products.map((productInfo) => {
+                return(
                 <Product
-
+                key={products.listing_id}
                 {...productInfo}
                 />
-              })}
+              )
+            })}
             </ul>
           )
 
